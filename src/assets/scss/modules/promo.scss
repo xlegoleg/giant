@@ -1,0 +1,33 @@
+.promo{
+  position: relative;
+  padding-bottom: 170px;
+  &-line{
+    width: 100%;
+    height: 2px;
+    background-color: $features-icon-border-color;
+    margin-bottom: 175px;
+  }
+  &-img{
+    width: 80%;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -10%;
+    position: absolute;
+  }
+  &-title{
+    @extend %text-title-template;
+  }
+  &-subtitle{
+    @extend %text-subtitle-template;
+  }
+  &-descr{
+    @extend %text-subtitle-template;
+  }
+  &-list{
+    @extend %list-template;
+    color: $text-color-dark;
+    &__item{
+      @extend %list-item-template;
+    }
+  }
+}

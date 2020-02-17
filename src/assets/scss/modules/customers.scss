@@ -1,0 +1,64 @@
+.customers{
+  padding:115px 0px 105px 0px;
+  &-text{
+    text-align: center;
+  }
+  &-title{
+    @extend %text-title-template;
+  }
+  &-subtitle{
+    @extend %text-subtitle-template;
+  }
+  &-slider{
+    margin-top: 70px;
+    width: 100%;
+  }
+  &-card{
+    background-color: $customer-bg-1;
+    padding: 30px;
+    &__descr{
+      @extend %text-subtitle-template;
+    }
+    &__title{
+      font-family: Dosis;
+      font-size: 18px;
+      font-weight: 400;
+      color: $text-color-dark;
+    }
+    &__subtitle{
+      @extend %text-subtitle-template;
+      text-align: start;
+    }
+  }
+  &-about{
+    margin-left: 26px;
+  }
+  &-wrapper{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  &-arrows{
+    @extend %arrows-template;
+  }
+  &-prev{
+    left: -5%;
+  }
+  &-next{
+    right:-5%
+  }
+}
+
+
+.slick-slide{
+  margin: 0px 26px;
+}
+.slick-track{
+  padding: 20px 0px;
+}
+.slick-center{
+  .customers-card{
+    background-color: $customer-bg-2;
+    box-shadow: 0px 10px 25px -10px rgba(0,0,0,0.3);
+  }
+}

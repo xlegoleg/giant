@@ -1,0 +1,50 @@
+.download{
+  padding: 115px 0px;
+  background: $main-color;
+  &-title{
+    @extend %text-title-template;
+    color: $text-color-light;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  &-button{
+    width: 100%;
+    padding: 10px 47px 10px 25px;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border:none;
+    &:hover{
+      box-shadow: 0px 0px 7px 5px $text-color-lightdark;
+    }
+    &:focus{
+      outline: none;
+    }
+    &__icon{
+      font-size: 50px;
+      &::before{
+        color: $text-color-darklight;
+      }
+      &_active{
+        &::before{
+          color: transparent !important;
+          background: $main-color;
+          background-clip:text;
+          transition: 0.3s;
+        }
+      }
+    }
+    &__text{
+      text-align: start;
+      margin-left: 30px;
+    }
+    &__title{
+      @extend %text-title-template;
+      color: $text-color-dark;
+      font-size: 30px;
+    }
+    &__subtitle{
+      @extend %text-subtitle-template
+    }
+  }
+}
